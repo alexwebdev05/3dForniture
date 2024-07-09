@@ -1,0 +1,33 @@
+:root {
+    // Text
+    --text-dark: rgb(0, 0, 0);
+    --text-white: white;
+
+    // Business colour
+    --primary-color: #FB6322;
+    --gradient: #DA4C10;
+
+    // Secundary
+    --background: #2E2B29;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+}
+
+body {
+    background-color: var(--background);
+}
+
+// Text
+.dark {
+    color: var(--text-dark);
+}
+
+.white {
+    color: var(--text-white);
+}
