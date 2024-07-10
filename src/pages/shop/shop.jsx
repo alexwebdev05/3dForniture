@@ -1,19 +1,19 @@
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 // Components
 import Brand from '../../components/brand'
 import Footer from '../../components/footer'
-import Button from '../../components/button';
+// import Button from '../../components/button';
 import Card from '../../components/card'
 
 import './style.scss'
 
 function Shop() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const home = () => {
-    navigate('/');
-  };
+  // const home = () => {
+  //   navigate('/');
+  // };
 
     return (
       <div id='shopBody'>
@@ -24,14 +24,15 @@ function Shop() {
         {/* <Button onClick={home}>About us</Button> */}
           <h2>Shop</h2>
           <section id='cards'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card modelPath='src/pages/shop/three.js/assets/models/grayChair.glb' />
+            <Card modelPath='src/pages/shop/three.js/assets/models/officeChair.glb' />
+            <Card modelPath='src/pages/shop/three.js/assets/models/table1.glb' />
+            <Card modelPath='src/pages/shop/three.js/assets/models/table2.glb' />
+            <Card modelPath='src/pages/shop/three.js/assets/models/officeChair.glb' />
+            <Card modelPath='src/pages/shop/three.js/assets/models/officeChair.glb' />
+            <Card modelPath='src/pages/shop/three.js/assets/models/officeChair.glb' />
+            <Card modelPath='src/pages/shop/three.js/assets/models/officeChair.glb' />
+
           </section>
           
         </section>

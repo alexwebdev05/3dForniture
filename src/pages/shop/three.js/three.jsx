@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 import * as THREE from 'three';
 
 // Modules
@@ -7,11 +8,11 @@ import { lights } from './scene/lightning';
 import { myCamera } from './scene/camera';
 
 // Models
-import { modelCreator } from './scene/models/grayChair';
+import { modelCreator } from './scene/models/modelGenerator';
 
 import styles from './three.module.css';
 
-function Three() {
+function Three({ modelPath }) {
   const mountRef = useRef(null);
   const modelRef = useRef(null);
 
@@ -27,7 +28,7 @@ function Three() {
     lights(scene);
 
     // 3D models
-    modelCreator(scene, modelRef);
+    modelCreator(scene, modelRef, modelPath);
 
     let center = new THREE.Vector3();
     
@@ -70,9 +71,11 @@ function Three() {
     // Clean up
     return () => {
       window.removeEventListener('pointermove', onMouseMove);
-      mount.removeChild(renderer.domElement);
+      if (renderer && renderer.domElement) {
+        mount.removeChild(renderer.domElement);
+      }
     };
-  }, []);
+  }, [modelPath]);
 
   return (
     <>
@@ -80,5 +83,9 @@ function Three() {
     </>
   );
 }
+
+Three.propTypes = {
+  modelPath: PropTypes.string.isRequired,
+};
 
 export default Three;

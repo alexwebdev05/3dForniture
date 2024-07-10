@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Three from '../pages/shop/three.js/three'
 
 const CardContainer = styled.div`
@@ -21,7 +22,7 @@ const CardContainer = styled.div`
         align-items: center;
         justify-content: center;
 
-        border-radius: 1.4rem;
+        border-radius: 1.3rem;
         background-color: var(--background);
     }
 
@@ -35,15 +36,19 @@ const CardContainer = styled.div`
     }
 `;
 
-function Card() {
+function Card({ modelPath }) {
     return (
         <>
             <CardContainer>
-                <div><Three /></div>
+                <div><Three modelPath={modelPath}  /></div>
                 <p>Nombre</p>
             </CardContainer>
         </>
     )
 }
+
+Card.propTypes = {
+    modelPath: PropTypes.string
+};
 
 export default Card
