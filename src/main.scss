@@ -9,6 +9,7 @@
 
     // Secundary
     --background: #2E2B29;
+    --white: white;
 }
 
 * {
@@ -16,7 +17,7 @@
     padding: 0;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
-    cursor: default;
+
 }
 
 body {
@@ -30,4 +31,11 @@ body {
 
 .white {
     color: var(--text-white);
+}
+
+// General
+.contentBody {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

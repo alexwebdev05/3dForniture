@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Components
 import Home from './pages/Home/home.jsx'
-import Shop from './pages/shop/shop.jsx'
+import Shop from './pages/exhibitor/exhibitor.jsx'
+import Object from './pages/object/object.jsx'
 
 import './main.scss'
 
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/object" element={<Object />} />
       </Routes>
     </BrowserRouter>
   );

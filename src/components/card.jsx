@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Three from '../pages/shop/three.js/three'
+import Three from '../pages/exhibitor/three.js/three'
 
 const CardContainer = styled.div`
     width: 10rem;
@@ -15,6 +15,8 @@ const CardContainer = styled.div`
 
     background-color: var(--text-white);
     overflow: visible;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
 
     div {
         display: flex;
@@ -36,10 +38,10 @@ const CardContainer = styled.div`
     }
 `;
 
-function Card({ modelPath }) {
+function Card({ modelPath, onClick }) {
     return (
         <>
-            <CardContainer>
+            <CardContainer onClick={ onClick }>
                 <div><Three modelPath={modelPath}  /></div>
                 <p>Nombre</p>
             </CardContainer>
@@ -48,7 +50,8 @@ function Card({ modelPath }) {
 }
 
 Card.propTypes = {
-    modelPath: PropTypes.string
+    modelPath: PropTypes.string,
+    onClick: PropTypes.func
 };
 
 export default Card
