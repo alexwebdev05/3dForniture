@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Three from '../pages/exhibitor/three.js/three'
 
+import { fornitures } from '../fornitures/fornitures'
+
 const CardContainer = styled.div`
     width: 10rem;
     height: 13rem;
@@ -17,6 +19,12 @@ const CardContainer = styled.div`
     overflow: visible;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
     cursor: pointer;
+
+    transition: filter 0.4s ease;
+
+    &:hover {
+        filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1));
+    }
 
     div {
         display: flex;
@@ -38,19 +46,22 @@ const CardContainer = styled.div`
     }
 `;
 
-function Card({ modelPath, onClick }) {
+function Card({ modelNumber, onClick }) {
+
+    const keys = Object.keys(fornitures);
+    
     return (
         <>
             <CardContainer onClick={ onClick }>
-                <div><Three modelPath={modelPath}  /></div>
-                <p>Nombre</p>
+                <div><Three modelPath={fornitures[keys[modelNumber]].path} /></div>
+                <p>{fornitures[keys[modelNumber]].name}</p>
             </CardContainer>
         </>
     )
 }
 
 Card.propTypes = {
-    modelPath: PropTypes.string,
+    modelNumber: PropTypes.number,
     onClick: PropTypes.func
 };
 

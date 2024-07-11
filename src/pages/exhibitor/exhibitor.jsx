@@ -12,9 +12,11 @@ import { fornitures } from '../../fornitures/fornitures'
 function Shop() {
   const navigate = useNavigate();
 
-  const object = () => {
-    navigate('/object');
+  const object = (name, path, description) => {
+    navigate('/object', { state: { name, path, description } });
   };
+
+  const keys = Object.keys(fornitures);
 
   return (
     <div className='contentBody'> 
@@ -25,14 +27,11 @@ function Shop() {
       <section id='shopContent'>
         <h2>Shop</h2>
         <section id='cards'>
-          <Card modelPath={fornitures.chair1.path} onClick={ object } />
-          <Card modelPath={fornitures.chair2.path} onClick={ object } />
-          <Card modelPath={fornitures.dresser1.path} onClick={ object } />
-          <Card modelPath={fornitures.dresser2.path} onClick={ object } />
-          <Card modelPath={fornitures.shelf1.path} onClick={ object } />
-          <Card modelPath={fornitures.chair1.path} onClick={ object } />
-          <Card modelPath={fornitures.chair1.path} onClick={ object } />
-          <Card modelPath={fornitures.chair1.path} onClick={ object } />
+          <Card modelNumber={0} onClick={() => object(fornitures[keys[0]].name, fornitures[keys[0]].path, fornitures[keys[0]].description)} />
+          <Card modelNumber={1} onClick={() => object(fornitures[keys[1]].name, fornitures[keys[1]].path, fornitures[keys[1]].description)} />
+          <Card modelNumber={2} onClick={() => object(fornitures[keys[2]].name, fornitures[keys[2]].path, fornitures[keys[2]].description)} />
+          <Card modelNumber={3} onClick={() => object(fornitures[keys[3]].name, fornitures[keys[3]].path, fornitures[keys[3]].description)} />
+          <Card modelNumber={4} onClick={() => object(fornitures[keys[4]].name, fornitures[keys[4]].path, fornitures[keys[4]].description)} />
         </section>
       </section>
 
