@@ -25,13 +25,16 @@ function Shop() {
 
        {/* Content */}
       <section id='shopContent'>
-        <h2>Shop</h2>
+        <h2>Exhibitor</h2>
         <section id='cards'>
           <Card modelNumber={0} onClick={() => object(fornitures[keys[0]].name, fornitures[keys[0]].path, fornitures[keys[0]].description)} />
           <Card modelNumber={1} onClick={() => object(fornitures[keys[1]].name, fornitures[keys[1]].path, fornitures[keys[1]].description)} />
           <Card modelNumber={2} onClick={() => object(fornitures[keys[2]].name, fornitures[keys[2]].path, fornitures[keys[2]].description)} />
           <Card modelNumber={3} onClick={() => object(fornitures[keys[3]].name, fornitures[keys[3]].path, fornitures[keys[3]].description)} />
           <Card modelNumber={4} onClick={() => object(fornitures[keys[4]].name, fornitures[keys[4]].path, fornitures[keys[4]].description)} />
+          <Card modelNumber={5} onClick={() => object(fornitures[keys[5]].name, fornitures[keys[5]].path, fornitures[keys[5]].description)} />
+          <Card modelNumber={6} onClick={() => object(fornitures[keys[6]].name, fornitures[keys[6]].path, fornitures[keys[6]].description)} />
+          <Card modelNumber={7} onClick={() => object(fornitures[keys[7]].name, fornitures[keys[7]].path, fornitures[keys[7]].description)} />
         </section>
       </section>
 

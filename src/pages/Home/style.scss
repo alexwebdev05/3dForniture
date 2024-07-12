@@ -24,3 +24,38 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+#fornitureButtons {
+    position: relative;
+}
+
+@media (min-width: 2099px) {
+
+    #textAndModel p {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #textAndModel {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #fornitureButtons {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #textAndModel p {
+        font-size: 1.5rem;
+    }
+
+    #textAndModel {
+        margin: 0 2rem;
+    }
+
+}

@@ -1,0 +1,44 @@
+#aboutContent {
+    margin: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+#aboutContent h2, #aboutContent p {
+    margin: 0 5rem;
+}
+
+#aboutContent h2 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+#aboutContent p {
+    font-size: 1.2rem;
+    padding: 0.3rem 0;
+}
+
+#aboutContent a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    #aboutContent h2, #aboutContent p {
+        margin: 0 2rem;
+    }
+
+    #aboutContent h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #aboutContent p {
+        text-align: justify;
+        font-size: 1rem;
+    }
+}

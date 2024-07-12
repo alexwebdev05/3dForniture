@@ -19,6 +19,33 @@ const ButtonContainer = styled.button`
         border: 2px solid var(--primary-color);
         background-color: var(--primary-color);
     }
+
+    @media (min-width: 2099px) {
+        
+    padding: 0.5rem 2.7rem;
+    font-size: 1.3rem;
+
+    }
+
+    @media (min-width: 1200px) and (max-width: 2099px) {
+
+    }
+
+    @media (max-width: 992px) {
+
+    }
+
+    @media (max-width: 768px) {
+
+    }
+
+    @media (max-width: 576px) {
+
+    }
+
+    @media (max-width: 360px) {
+
+    }
 `;
 
 function Button({ children, onClick }) {

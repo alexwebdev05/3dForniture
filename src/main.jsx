@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home/home.jsx'
 import Shop from './pages/exhibitor/exhibitor.jsx'
 import Object from './pages/object/object.jsx'
+import AboutUs from './pages/aboutUs/aboutUs.jsx';
 
 import './main.scss'
 
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/object" element={<Object />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );

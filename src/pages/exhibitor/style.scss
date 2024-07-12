@@ -1,5 +1,8 @@
 #shopContent {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     margin: 3rem 10rem;
 }
@@ -7,6 +10,7 @@
 #shopContent h2 {
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 2rem;
 
     color: var(--text-white);
 }
@@ -16,4 +20,39 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (min-width: 2099px) {
+    
+}
+
+@media (max-width: 1300px) {
+
+    #shopContent {
+        margin: 0rem;
+    }
+
+    #cards {
+        max-height: 30rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 360px) {
+
 }

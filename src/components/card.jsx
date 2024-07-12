@@ -31,6 +31,7 @@ const CardContainer = styled.div`
         flex: 0.9;
         align-items: center;
         justify-content: center;
+        min-height: 10rem;
 
         border-radius: 1.3rem;
         background-color: var(--background);

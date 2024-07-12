@@ -1,37 +1,50 @@
 export const fornitures = {
     chair1: {
-        id: '234857364237849',
         name: 'Confortable 7-ksj',
         description: 'In today’s fast-paced work environment, comfort and efficiency are paramount. Our Confortable 7-ksj Chair ensures that you can focus on your tasks without the distraction of discomfort. Whether you are working from home or in a corporate office, this chair is designed to enhance your sitting experience and support your wellbeing.',
         path: 'src/assets/models/chair1.glb',
         type: 'chair'
     },
     chair2: {
-        id: '378654823475619',
         name: 'Office black chair',
-        description: '',
+        description: 'In today’s fast-paced world, having reliable and high-quality furnishings is essential. The [ PONER NOMBRE AQUI ] exemplifies top-notch craftsmanship and design, ensuring that your workspace is not only functional but also stylish and comfortable.',
         path: 'src/assets/models/chair2.glb',
         type: 'chair'
     },
     dresser1: {
-        id: '239645345684938',
         name: 'Big dresser',
-        description: '',
+        description: 'Experience the perfect blend of luxury and practicality with the [ PONER NOMBRE AQUI ]. Crafted with the finest materials, this piece guarantees longevity and exceptional performance, making it an indispensable addition to any setting.',
         path: 'src/assets/models/dresser1.glb',
         type: 'dresser'
     },
     dresser2: {
-        id: '324569438756484',
         name: 'Small dresser',
-        description: '',
+        description: 'The [ PONER NOMBRE AQUI ] represents the pinnacle of ergonomic design, providing unparalleled comfort and support. Its sleek aesthetics and robust construction make it a standout choice for those who value both form and function.',
         path: 'src/assets/models/dresser2.glb',
         type: 'dresser'
     },
     shelf1: {
-        id: '345636445789346',
         name: 'Standard shelf',
-        description: '',
+        description: 'Elevate your environment with the [ PONER NOMBRE AQUI ], a testament to superior quality and innovative design. This piece is engineered to deliver outstanding durability and a sophisticated look that complements any decor.',
         path: 'src/assets/models/shelf1.glb',
         type: 'shelf'
+    },
+    shelf2: {
+        name: 'Esthetic shelf',
+        description: 'With the [ PONER NOMBRE AQUI ], you can enjoy the perfect combination of style, comfort, and reliability. This product is designed to meet the highest standards of quality, ensuring it remains a cherished part of your space for years to come.',
+        path: 'src/assets/models/shelf2.glb',
+        type: 'shelf'
+    },
+    light1: {
+        name: 'Wall lights',
+        description: 'Discover the excellence of the [ PONER NOMBRE AQUI ], meticulously crafted to provide an optimal user experience. Its premium build and elegant design make it a must-have for those who seek the best in both aesthetics and functionality.',
+        path: 'src/assets/models/light1.glb',
+        type: 'light'
+    },
+    light2: {
+        name: 'Roof light',
+        description: 'The [ PONER NOMBRE AQUI ] sets a new standard in high-quality furnishings. Its exceptional design and robust construction ensure that it not only meets but exceeds your expectations, offering unparalleled comfort and style.',
+        path: 'src/assets/models/light2.glb',
+        type: 'light'
     }
 }

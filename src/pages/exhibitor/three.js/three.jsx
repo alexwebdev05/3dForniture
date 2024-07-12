@@ -36,7 +36,7 @@ function Three({ modelPath }) {
 
 
     function onMouseMove(event) {
-      pointer.x = -( event.clientX / window.innerWidth ) + 3;
+      pointer.x = -( event.clientX / window.innerWidth ) + 2;
       pointer.y = ( event.clientY / window.innerHeight );
     }
 

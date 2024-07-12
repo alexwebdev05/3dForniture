@@ -45,3 +45,28 @@
 #objectExpecifications h3 {
     margin: 0 0 0 2rem;
 }
+
+@media (max-width: 1500px) {
+
+    #objectContent {
+        margin: 10rem 2rem;
+    }
+}
+
+@media (max-width: 830px) {
+    #objectContent {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #objectExpecifications {
+        text-align: center;
+        width: auto;
+    }
+
+    #object3dModel {
+        flex: 0.4;
+        width: 15rem;
+    }
+}
