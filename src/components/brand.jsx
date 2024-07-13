@@ -40,7 +40,7 @@ function Brand() {
     return (
         <>
             <BrandContainer onClick={ home }>
-                <img src="/public/vite.svg" alt="Logo" />
+                <img src="logo.svg" alt="Logo" />
                 <span className='white'>3dForniture</span>
             </BrandContainer>
         </>
