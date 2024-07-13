@@ -31,9 +31,6 @@ function Three({ modelPath }) {
     modelCreator(scene, modelRef, modelPath);
 
     let center = new THREE.Vector3();
-    
-    // Look at
-
 
     function onMouseMove(event) {
       pointer.x = -( event.clientX / window.innerWidth ) + 2;

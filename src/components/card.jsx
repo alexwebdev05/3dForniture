@@ -5,7 +5,7 @@ import Three from '../pages/exhibitor/three.js/three'
 import { fornitures } from '../fornitures/fornitures'
 
 const CardContainer = styled.div`
-    width: 10rem;
+    width: 12rem;
     height: 13rem;
     margin: 1rem 2rem; 
 

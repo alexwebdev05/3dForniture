@@ -28,26 +28,6 @@ const BrandContainer = styled.div`
         }
 
     }
-
-    @media (min-width: 1200px) and (max-width: 2099px) {
-
-    }
-
-    @media (max-width: 992px) {
-
-    }
-
-    @media (max-width: 768px) {
-
-    }
-
-    @media (max-width: 576px) {
-
-    }
-
-    @media (max-width: 360px) {
-
-    }
 `;
 
 function Brand() {

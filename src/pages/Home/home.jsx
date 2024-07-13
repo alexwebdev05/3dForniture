@@ -27,12 +27,12 @@ function Home() {
       {/* Content */}
       <section id='homeContent'>
         <div id='textAndModel'>
-          <p className='white'>At <span>3dFornitures</span> we are committed to offering the highest quality furniture on the market at a fair price.
+          <babel className='white'>At <span>3dFornitures</span> we are committed to offering the highest quality furniture on the market at a fair price.
             <div id='fornitureButtons'>
               <Button onClick={shop}>Exhibitor</Button>
               <Button onClick={aboutUs}>About us</Button>
           </div>
-        </p>
+        </babel>
           <Three />
         </div>       
       </section>
