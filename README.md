@@ -16,7 +16,7 @@ This is a static page made with React and Three.js. In it, I create various reus
 ![Home](public/home.png)
 ![Exhibitor](public/exhibitor.png)
 ![Object](public/object.png)
-![AboutUs](public\aboutUs.png)
+![AboutUs](public/aboutUs.png)
 
 ## Page URL
 Estoy en proceso de hostear la pagina.
