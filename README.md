@@ -12,13 +12,11 @@ Esta es una página estática hecha con React y Three.js. En ella creo varios co
 
 This is a static page made with React and Three.js. In it, I create various reusable components and 3D model views to create a visual impression that stands out from the usual.
 
+## Page URL
+[3dFornitures](https://994ca11c.3dforniture.pages.dev/)
+
 ## Imagenes / Images
 ![Home](public/home.png)
 ![Exhibitor](public/exhibitor.png)
 ![Object](public/object.png)
 ![AboutUs](public/aboutUs.png)
-
-## Page URL
-Estoy en proceso de hostear la pagina.
-
-I'm working to host the page.
